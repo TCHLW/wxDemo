@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+
+  <view bindtap="bindDetailTap" class="userdetail">
+    <text class="userdetail">{{detail}}</text>
+  </view>
+
+  <view bindtap='bindTimeOutTap' class="usermotto">
+    <text class="user-motto">这里是个什么玩意这里是个什么玩意这里是个什么玩意：{{motto}}</text>
+    <text class="user-motto2">这里是个什么玩意这里是个什么玩意这里是个什么玩意我也不知道啊</text>
+  </view>
+
+</view>
