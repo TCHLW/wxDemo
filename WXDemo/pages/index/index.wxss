@@ -13,34 +13,30 @@
 }
 
 .userinfo-nickname {
-  color: #aaa;
+  color: red;
 }
 
 .userdetail {
-  margin-top: 120rpx;
-  height: 40rpx;
+  margin-top: 120px;
   /* margin-left: -100px; */
   background-color: rgb(10, 33, 236);
   color: rgb(235, 23, 23);
 }
 
 .usermotto {
-  width: 200rpx;
-  margin-top: 40rpx;
+  margin-top: 20px;
   background-color: rgb(207, 230, 6);
 }
 
 .user-motto {
-  margin-top: 20rpx;
   color: #aaa;
   font-size: 50rpx;
-  flex-shrink: 1;
+  /* flex-shrink: 1; */
 }
 
 .user-motto2 {
-  margin-top: 20rpx;
   color: #aaa;
-  font-size: 50rpx;
-  flex-shrink: 1;
+  font-size: 20rpx;
+  /* flex-shrink: 1; */
 }
 

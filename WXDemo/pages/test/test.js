@@ -1,3 +1,4 @@
+
 Page({
 
   /**
@@ -12,6 +13,14 @@ Page({
    */
   onLoad: function (options) {
     console.log(options.id);
+
+    if (typeof this.getTabBar === 'function' &&
+      this.getTabBar()) {
+      this.getTabBar().setData({
+        selected: 1
+      })
+    }
+
     var that = this;
 
     var data = {
@@ -42,6 +51,14 @@ Page({
         },
         {
           "id": 4,
+          "imgurl": "../../images/car.png",
+          "useDate": "2017-12-22",
+          "cx": "奇瑞EQ1",
+          "time": "1小时",
+          "feiyong": "20元"
+        },
+        {
+          "id": 5,
           "imgurl": "../../images/car.png",
           "useDate": "2017-12-22",
           "cx": "奇瑞EQ1",

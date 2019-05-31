@@ -1,0 +1,18 @@
+<!--pages/xcs.wxml-->
+
+<view class='container'>
+
+  <view class='tap1'>
+    <text class='tapShowUser' bindtap='bindTapUser'>
+        点击我
+    </text>
+  </view>
+  
+  <view class='tap2'>
+    <text class='tapShowUser2'>点击我2</text>
+    <text class='tapShowUser3'>点击我3</text>
+    <text class='tapShowUser4'>点击我4</text>
+  </view>
+
+</view>
+

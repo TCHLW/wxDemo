@@ -17,7 +17,6 @@
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
-  margin-bottom: 30rpx;
   background-color: #aaa;
 }
 

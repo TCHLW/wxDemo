@@ -1,0 +1,44 @@
+/* pages/xcs.wxss */
+.container {
+  width: 100%;
+  flex-direction: column;
+  background-color: rgb(80, 243, 16);
+  align-items: center;
+  display: flex;
+} 
+
+.tap1{
+  margin-top: 20px;
+  background-color: rgb(252, 2, 2);
+}
+
+.tapShowUser{
+  text-decoration:underline;
+}
+
+.tap2{
+  margin-top: 20px;
+  background-color: rgb(236, 184, 12);
+  margin-bottom: 20px;
+}
+
+.tapShowUser2{
+  text-decoration:underline;
+  color:rgb(4, 0, 255);
+  background-color:cyan;
+}
+
+.tapShowUser3{
+  text-decoration:underline;
+  color:rgb(4, 0, 255);
+  background-color:cyan;
+
+}
+
+.tapShowUser4{
+  text-decoration:underline;
+  color:rgb(4, 0, 255);
+  background-color: white;
+}
+
+

@@ -1,5 +1,6 @@
 {
   "usingComponents": {},
+  "navigationBarTitleText": "测试界面1",
   "onReachBottomDistance": 100,
   "enablePullDownRefresh": true
 }

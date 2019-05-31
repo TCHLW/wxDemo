@@ -7,6 +7,9 @@ const app = getApp()
 var timer; // 计时器
 
 Page({
+
+
+  
   data: {
     detail: '我是谁  我在哪',
     userInfo: {},
@@ -15,10 +18,10 @@ Page({
   },
   //事件处理函数
   bindViewTap: function() {
-    // wx.navigateTo({
-    //   url: '../logs/logs'
-    // })
-    Countdown();
+    wx.navigateTo({
+      url: '../logs/logs'
+    })
+    // Countdown();
   },
 
   onPullDownRefresh: function () {
@@ -28,7 +31,8 @@ Page({
     // showInfoManager.showInfoManagerWithLoading('加载中',true)
     // showInfoManager.showInfoManagerWithToast('接口访问成功','')
     showInfoManager.showInfoManagerWithModel('温馨提示', '您有一个包裹请注意查收', true, '取消','确定')
-    userInfoManager.dologinUserInfo(apiPath.loginInfoUrl, '134679', '13012818701', this, this.successFun, this.failFun)
+    // userInfoManager.dologinUserInfo(apiPath.loginInfoUrl, '134679', '13012818701', this, this.successFun, this.failFun)
+    userInfoManager.studentCourseOrderInfo('1', '0', '1', '1', this, this.successFun, this.failFun)
   },
 
   onReachBottom: function () {
@@ -49,6 +53,15 @@ Page({
     })
   },
   onLoad: function () {
+
+
+    if (typeof this.getTabBar === 'function' &&
+      this.getTabBar()) {
+      this.getTabBar().setData({
+        selected: 0
+      })
+    }
+
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -76,7 +89,8 @@ Page({
       })
     }
     
-    userInfoManager.dologinUserInfo(apiPath.loginInfoUrl, 'root', 'root', this, this.successFun, this.failFun)
+    // userInfoManager.dologinUserInfo(apiPath.loginInfoUrl, 'root', 'root', this, this.successFun, this.failFun)
+    userInfoManager.studentDologinUserInfo('18916612959', this, this.successFun, this.failFun)
 
   },
 
